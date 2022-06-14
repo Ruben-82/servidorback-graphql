@@ -21,16 +21,19 @@ class CreateBandas(graphene.Mutation):
     nombre = graphene.String()
     genero = graphene.String()
     canciones = graphene.String()
+    empresa= graphene.String()
+    salida=graphene.String()
 
     #2
     class Arguments:
         nombre = graphene.String()
         genero = graphene.String()
         canciones = graphene.String()
-
+        empresa = graphene.String()
+        salida= graphene.String()  
     #3
-    def mutate(self, info, nombre, genero, canciones):
-        banda = Bandas(nombre=nombre, genero=genero, canciones=canciones)
+    def mutate(self, info, nombre, genero, canciones, empresa, salida):
+        banda = Bandas(nombre=nombre, genero=genero, canciones=canciones, empresa=empresa, salida=salida)
         banda.save()
 
         return CreateBandas(
@@ -38,6 +41,9 @@ class CreateBandas(graphene.Mutation):
             nombre=banda.nombre,
             genero=banda.genero,
             canciones=banda.canciones,
+            empresa=banda.empresa,
+            salida=banda.salida,
+
         )
 
 

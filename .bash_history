@@ -103,3 +103,28 @@ source venv/bin/activate
 sudo ../venv/bin/python manage.py runserver 0.0.0.0:80
 cd musica
 sudo ../venv/bin/python manage.py runserver 0.0.0.0:80
+ls
+cd api
+source venv/bin/activate
+ls
+cd musica
+sudo ../venv/bin/python manage.py runserver 0.0.0.0:80
+cd musica
+ls
+sudo vi settings.py
+ls .la
+ls -la
+rm settings.py.swp
+sudo rm .settings.py.swp
+ls
+sudo vi settings.py
+ls -la
+ls
+cd ..
+ls
+python manage.py migrate
+ls
+cd musica
+ls
+sudo settings.py
+sudo vi settings.py

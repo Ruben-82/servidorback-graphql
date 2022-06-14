@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'musica.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'web_hackernews',
-        'USER': 'postgres',
-        'PASSWORD': 'adsoft',
-        'HOST': '34.125.0.249',
+        'NAME': 'bandas',
+        'USER': 'ruben',
+        'PASSWORD': '0990',
+        'HOST': '35.236.106.210',
         'PORT': '5432',
     }
 }
